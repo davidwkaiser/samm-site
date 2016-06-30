@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samm Kaiser Volleyball</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Needs script for jquery-UI tabs -->
+<div id="samm-tabs">
+  <ul>
+    <li><a href="#tab-1">Tab 1</a></li>
+    <li><a href="#tab-2">Tab 2</a></li>
+    <li><a href="#tab-3">Tab 3</a></li>
+    <li><a href="#tab-4">Tab 4</a></li>
+  </ul>
+  <div id="tab-1"><p>Title number 1</p></div>
+  <div id="tab-2"><p>Title number 2</p></div>
+  <div id="tab-3"><p>Title number 3</p></div>
+  <div id="tab-4"><p>Title number 4</p></div>
+</div>
+
+<script>
+  $(function() {
+    $('#samm-tabs').tabs();
+  });
+</script>
+</body>
+</html>
